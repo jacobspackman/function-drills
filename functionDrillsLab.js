@@ -84,7 +84,12 @@ compareNums(6, 3);
   Create a variable outside the function called 'sum' and set it equal to add invoked (called), passing in 2 arguments.
 */
 
-//CODE HERE
+function add(num1, num2){
+  return +num1 + +num2
+}
+
+sum = add(3, 9);
+console.log(sum);
 
 
 ////////////////// PROBLEM 7 ////////////////////
@@ -100,7 +105,8 @@ const exclaim = function(str) {
 
 // console.log('arrow')
 // console.log('declaration')
-// console.log('expression')
+console.log('expression')
+
 
 
 
@@ -115,7 +121,7 @@ const exclaimTwo = str => {
   return str.toUpperCase() + '!!!'
 }
 
-// console.log('arrow')
+console.log('arrow')
 // console.log('declaration')
 // console.log('expression')
 
@@ -126,6 +132,7 @@ const exclaimTwo = str => {
   Brownie points if you use a template string
 */
 
+const exclaimThree = str => `${str.toUpperCase()}!!!`;
 
 
 ////////////////// PROBLEM 9 ////////////////////
@@ -140,7 +147,7 @@ function exclaimFour(str) {
 }
 
 // console.log('arrow')
-// console.log('declaration')
+console.log('declaration')
 // console.log('expression')
 
 
@@ -153,7 +160,17 @@ function exclaimFour(str) {
   Create a variable called 'nameGreeting' and set it equal to your function invoked (called) passing in an argument.
 */
 
-//CODE HERE
+function nameCheck(name){
+  if(name === "Steven"){
+    console.log("What is up Steven?");
+  }else if(name === "Bryan"){
+    console.log("Hey Bryan");
+  }else {
+    console.log(`Cool name, ${name}`);
+  }
+}
+let nameGreeting = nameCheck("Jacob");
+
 
 
 ////////////////// PROBLEM 11 ////////////////////
