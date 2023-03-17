@@ -24,7 +24,9 @@ helloWorld()
     Write an arrow function called 'jsNinja' that returns the string: 'I am a JavaScript ninja!'
 */
 
+const jsNinja = () => console.log("I am a JavaScript ninja!")
 
+jsNinja()
 
 
 ////////////////// PROBLEM 3 ////////////////////
@@ -34,7 +36,11 @@ helloWorld()
   Call the function, passing in an argument.
 */
 
-//CODE HERE
+function printName(name) {
+  console.log(name);
+}
+
+printName("Jacob");
 
 
 ////////////////// PROBLEM 4 ////////////////////
@@ -47,7 +53,11 @@ helloWorld()
   Make sure to call your function and pass in an argument.
 */
 
-//CODE HERE
+function greeting(name){
+  console.log(`Hello, ${name}`);
+}
+
+greeting("Jonny");
 
 
 ////////////////// PROBLEM 5 ////////////////////
@@ -61,7 +71,9 @@ helloWorld()
     Brownie points if you use a ternary statement (only spend significant time on this if you have wiggle room)
 */
 
-//CODE HERE
+const compareNums = (num1, num2) => num1 > num2 ? console.log(num1) : console.log(num2);
+
+compareNums(6, 3);
 
 
 ////////////////// PROBLEM 6 ////////////////////
